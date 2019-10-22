@@ -57,5 +57,5 @@ cli:
   debug: true
   adjustments:
     "/sku": "Sku*/"
-  disable-mm: true
+  disable-mm: false
 ```
