@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "debug": "node --max_old_space_size=4096 --inspect-brk ./dist/index.js"
+    "debug": "node --max_old_space_size=4096 --inspect-brk ./dist/index.js",
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register/ src/Terraform/UnitTest/*.ts"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,15 @@
     "@types/node": "^7.0.18"
   },
   "dependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
     "autorest-extension-base": "https://github.com/olydis/autorest-extension-base",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
     "net": "^1.0.2",
     "node": "^12.11.0",
-    "node-yaml": "^3.2.0"
+    "node-yaml": "^3.2.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
   }
 }
