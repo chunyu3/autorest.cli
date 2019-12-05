@@ -1,5 +1,5 @@
-import { GeneratePrimaryPropertySet, GeneratePrimaryPropertyGet } from '../Generator/Property/PropertyGenerator'
-import { TFModuleOption } from '../TFModel/TFModel';
+import { GeneratePrimaryPropertySet, GeneratePrimaryPropertyGet } from '../../../src/Terraform/Generator/Property/PropertyGenerator'
+import { TFModuleOption } from '../../../src/Terraform/TFModel/TFModel';
 import { expect } from 'chai';
 import 'mocha';
 
