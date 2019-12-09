@@ -15,3 +15,4 @@ export function GeneratePrimaryPropertyGet(tf_model: TFModuleOption): string {
     }
     return tf_model.GoVariableName + " := " + "d.Get(\"" + tf_model.GoSchemaName + "\").(" + tf_model.GoTypeName + ")"
 }
+
